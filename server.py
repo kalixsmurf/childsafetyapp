@@ -10,7 +10,6 @@ def process_request():
         return jsonify({"error": "Request must be JSON"}), 400
 
     data = request.get_json()
-
     try:
         result = main(data)
         return jsonify({"status": "success", "result": result}), 200
