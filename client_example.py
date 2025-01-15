@@ -4,8 +4,9 @@ def test_flask_api():
     url = "http://127.0.0.1:5000/process"
 
     payload = {
-        "path": "/test.mp3" #Here, the path that will be sent should be the relative path with respect to the server.py file
+        "path": "03-01-03-01-01-01-18.wav" #Here, the path that will be sent should be the relative path with respect to the server.py file
     }
+
     """
     For example, if the child safety app(the one with tkinter) is running in a folder named "app"
     The server.py file is running in a folder named "backend"
